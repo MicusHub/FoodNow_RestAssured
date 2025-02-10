@@ -1,6 +1,6 @@
-📌 FoodNow REST Assured: API Testing Project
+##📌 FoodNow REST Assured: API Testing Project
 
-📖 Project Overview
+##📖 Project Overview
 
 FoodNow REST Assured is an API testing project designed to ensure the reliability and functionality of the FoodNow web application's backend. The project employs REST Assured for automated API testing and integrates TestNG and Allure for structured test execution and reporting.
 
@@ -30,7 +30,7 @@ HTTP Client: Apache HttpClient 4.5.14
 
 Programming Language: Java 17
 
-###📂 Project Structure
+📂 Project Structure
 - **src/**
   - `main/` (application files)
   - `test/` (test cases)
