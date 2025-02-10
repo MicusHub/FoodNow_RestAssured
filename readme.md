@@ -30,24 +30,7 @@ HTTP Client: Apache HttpClient 4.5.14
 
 Programming Language: Java 17
 
-📂 Project Structure
-
-FoodNow_RestAssured
-├── src
-│   ├── main
-│   └── test
-├── build.gradle
-├── settings.gradle
-├── gradlew
-├── gradlew.bat
-├── build
-│   ├── allure-results
-│   ├── reports
-│   ├── test-results
-└── README.md
-
-## 📂 Project Structure
-
+###📂 Project Structure
 - **src/**
   - `main/` (application files)
   - `test/` (test cases)
