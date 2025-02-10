@@ -1,0 +1,47 @@
+plugins {
+    id 'java'
+    id 'io.qameta.allure' version '2.11.2' // Плагин Allure для Gradle
+}
+
+group = 'com.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Lombok для удобства
+    compileOnly 'org.projectlombok:lombok:1.18.34'
+    annotationProcessor 'org.projectlombok:lombok:1.18.34'
+    testCompileOnly 'org.projectlombok:lombok:1.18.34'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.34'
+
+    // Фреймворк TestNG
+    implementation 'org.testng:testng:7.10.2'
+
+    // Для работы с REST API
+    implementation 'org.apache.httpcomponents:httpclient:4.5.14'
+    implementation group: 'org.apache.httpcomponents', name: 'fluent-hc', version: '4.5.14'
+    implementation group: 'io.rest-assured', name: 'rest-assured', version: '5.5.0'
+
+    // Парсинг JSON
+    implementation group: 'com.google.code.gson', name: 'gson', version: '2.11.0'
+
+    // Allure интеграция
+    testImplementation 'io.qameta.allure:allure-testng:2.23.0'
+    testImplementation 'io.qameta.allure:allure-rest-assured:2.23.0'
+}
+
+allure {
+    version = '2.23.0' // Версия Allure
+    useTestNG { // Интеграция с TestNG
+        version = '2.23.0'
+    }
+}
+
+test {
+    useTestNG()
+    systemProperty "allure.results.directory", "build/allure-results"
+}
+
