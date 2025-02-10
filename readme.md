@@ -46,6 +46,17 @@ FoodNow_RestAssured
 │   ├── test-results
 └── README.md
 
+## 📂 Project Structure
+
+- **src/**
+  - `main/` (application files)
+  - `test/` (test cases)
+- **build.gradle** (Gradle build configuration)
+- **settings.gradle** (Gradle settings)
+- **gradlew**, **gradlew.bat** (Gradle wrapper scripts)
+- **README.md** (Project documentation)
+
+
 ⚙️ Installation and Setup
 
 🔧 Prerequisites
